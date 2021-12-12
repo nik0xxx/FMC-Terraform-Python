@@ -1,0 +1,4 @@
+name,value,description
+"""NET_50.20.20.0_24""","""20.20.20.0/24""","""terraform network object"""
+"""NET_90.20.20.0_24""","""30.20.20.0/24""","""terraform network object 2"""
+"""NET_1200.20.20.0_24""","""1200.20.20.0/24""","""terraform network object 2"""

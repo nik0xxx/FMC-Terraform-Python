@@ -1,0 +1,4 @@
+name,port,protocol
+"""NTP""","""123""","""TCP"""
+"""Port_tera""","""1286""","""UDP"""
+"""Port_tera2""","""1268""","""TCP"""

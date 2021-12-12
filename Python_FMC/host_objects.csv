@@ -1,0 +1,6 @@
+name,value,description
+”host_example1”,”10.10.0.1”,”example 1”
+”host_example2”,”10.10.0.2”,”example 2”
+”host_example3”,”10.10.0.3”,”example 3”
+”host_example4”,”10.10.0.4”,”example 4”
+”host_example5”,”10.10.0.5”,”example 5”
