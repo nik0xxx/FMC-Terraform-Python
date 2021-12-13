@@ -18,13 +18,17 @@ Python will be used in order to fill the variables.tfvars of Terraform FMC provi
    
    
    Requirements
+   
    Python 3.4 +
+   
    Installation of Terraform 
    
    
    
    Usage
+   
    Make your own CSV files, ensure that you will have the same headers (name, value description) as the example csv's located here. 
+   
    All the values in the CSV files should be with "". 
    
    
