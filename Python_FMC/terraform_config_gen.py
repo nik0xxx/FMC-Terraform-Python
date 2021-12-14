@@ -142,16 +142,17 @@ class terraform_config_fmc:
             content = f.read()
             f.write( "\n }" )
 
+    def main():
+        selection()
+        objects = terraform_config_fmc(file1, template_hosts1, to_be_added1)
+        objects.create_objects()
+        objects.line_prepender(1)
+        objects.line_ending()
 
     
 
 if __name__ == "__main__":
-    
-  selection()
-  objects = terraform_config_fmc(file1, template_hosts1, to_be_added1)
-  objects.create_objects()
-  objects.line_prepender(1)
-  objects.line_ending()
+    main()
  
 
   
