@@ -17,7 +17,13 @@ Python will be used in order to fill the variables.tfvars of Terraform FMC provi
    variables.tfvars will be saved automaticall to the correct folder of each object in Terraform. 
    
    
-   Requirements
+   
+Special thanks to "adyanth" for providing in his repo various examples of terraform and FMC, which part of them are used also here. I would like to take them one step further and automate the configuration. The end goal is the user to apply the changes to the firewall by using only the csv files. 
+By the way, in case some of you want to learn more about FMC, I found the videos of adyanth in youtube one of the best resources for it. 
+
+   
+   
+   # Requirements 
    
    Python 3.4 +
    
@@ -25,7 +31,7 @@ Python will be used in order to fill the variables.tfvars of Terraform FMC provi
    
    
    
-   Usage
+   # Usage
    
    Make your own CSV files, ensure that you will have the same headers (name, value description) as the example csv's located here. 
    
