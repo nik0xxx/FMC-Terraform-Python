@@ -13,8 +13,8 @@ Python will be used in order to fill the variables.tfvars of Terraform FMC provi
    a CSV file. In our case the CSV files are located in Python_FMC folder named "host_objects.csv , network_objects.csv and
    port_objects.csv
 
-2) The "terraform_config_gen.py" python script will use the variables in these CSV files and will generate variables.tfvars. The 
-   variables.tfvars will be saved automaticall to the correct folder of each object in Terraform. 
+2) The "terraform_config_gen.py" python script will ask us what kind of object we want to configure in FMC. Based on the answer it will 
+use the correct from available CSV files and the variables.tfvars will be saved automatically to the correct folder of each object in Terraform. 
    
    
    
