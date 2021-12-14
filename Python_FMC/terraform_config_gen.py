@@ -89,7 +89,10 @@ class terraform_config_fmc:
         d = {}
 
 #we remove any older existing configuration and we create the new file. 
-        os.remove(template_output)
+        if os.path.exists(template_output):
+            os.remove(template_output)
+        else:
+            print("The file was not deleted because it didn't exist \n You should see the new variables.tfvars under the appropiate folder")
 
         with open(self.file, "r") as f:
             reader = csv.DictReader(f)
@@ -142,12 +145,14 @@ class terraform_config_fmc:
             content = f.read()
             f.write( "\n }" )
 
-    def main():
-        selection()
-        objects = terraform_config_fmc(file1, template_hosts1, to_be_added1)
-        objects.create_objects()
-        objects.line_prepender(1)
-        objects.line_ending()
+
+
+def main():
+    selection()
+    objects = terraform_config_fmc(file1, template_hosts1, to_be_added1)
+    objects.create_objects()
+    objects.line_prepender(1)
+    objects.line_ending()
 
     
 
